@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Disappearing circles</title>
+        <style>
+            #did1{
+                background-color: red;
+            }
+            #did2{
+                background-color: green;
+            }
+            #did3{
+                background-color: blue;
+            }
+            .common{
+                width:200px;
+                height: 200px;
+                margin: 10px;
+                border-radius: 50%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="common" id="did1"></div>
+        <div class="common" id="did2"></div>
+        <div class="common" id="did3"></div>
+        <script>
+            document.getElementById("did1").onclick=function(){
+                document.getElementById("did1").style.display="none";
+            }
+            document.getElementById("did2").onclick=function(){
+                document.getElementById("did2").style.display="none";
+            }
+            document.getElementById("did3").onclick=function(){
+                document.getElementById("did3").style.display="none";
+            }
+        </script>
+    </body>
+</html>
